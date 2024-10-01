@@ -101,7 +101,7 @@ print()
 print('*****  start section 5 - iterate through keys, values, items ********')
 print()
 
-
+'''
 
 for key in phonebook:
     print(f"The name is {key} and the phone number is {phonebook[key]}")
@@ -119,7 +119,7 @@ print()
 print('*****  end section 5 ********')
 print()
 
-
+'''
 
 
 print()

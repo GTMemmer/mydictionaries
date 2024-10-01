@@ -18,6 +18,7 @@ room-number,use,sq-ft,price
 
 
 
+
 datastore = { "medical":[
       { "room-number": 100,
         "use": "reception",
@@ -47,3 +48,15 @@ datastore = { "medical":[
 
       ]
 }
+
+import csv
+
+data_csv = open('retail_space.csv','w')
+
+data_csv.write('room-number,use,sq-ft,price\n')
+
+for key in datastore["medical"]:
+    data_csv.write(f"{key['room-number']},")
+    data_csv.write(f"{key['use']},")
+    data_csv.write(f"{key['sq-ft']},")
+    data_csv.write(f"{key['price']}\n")
