@@ -17,6 +17,13 @@ reverse_cipher = {
              '÷':'w', '«':'X', '◊':'x', 'Ç':'Y', 'Œ':'y', 
              'Â':'Z', '':'z'}
 
+msg = ''
 for character in text:
     if character in reverse_cipher:
-        print(reverse_cipher[character])
+        msg += reverse_cipher[character]
+    else:
+        msg += character
+
+print(msg)
+        
+
